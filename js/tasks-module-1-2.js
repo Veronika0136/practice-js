@@ -102,44 +102,157 @@
 // Функція повинна повернути булеве значення true, якщо str містить принаймні одну велику літеру.
 //  В іншому випадку функція повинна повернути булеве значення false. Підказка: допоможе toLowerCase();
 
-
+//function searchLet(str) {
+//  if (str.match(/[A-Z]/)) {
+//    return true;
+//  } else {
+//    return false;
+//  }
+//}
+//console.log(searchLet('niKa'));
 
 ///Задача-9.Напишіть функцію, яка приймає два параметри str1 та str2.
 // Функція повинна повернути булеве значення true, якщо довжина str1 більше, ніж довжина str2.
 // В іншому випадку функція повинна повернути булеве значення false.
 
+//function compareLet(str1, str2){
+//    if (str1.length > str2.length){
+//        return true;
+//    }else {
+//        return false;
+//    }
+//}
 
+//console.log(compareLet("Veronika", "Nika"))
 
 ///Задача-12.Напишіть функцію, яка приймає рядок str. Функція повинна повернути булеве значення true, якщо str містить хоча б один пробіл.
 //  В іншому випадку функція повинна повернути булеве значення false.
 
+// function searchLet(str) {
+//   if (str.match(/[ ]/)) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(searchLet('niKa'));
+
 ///Задача-14.Напишіть функцію, яка приймає рядок str.
 // Функція повинна повернути булеве значення true, якщо str є паліндромом (однаковий у зворотному напрямку).
 // В іншому випадку функція повинна повернути булеве значення false.Підказка: тут допоможе метод масиву reverse();
+///????????????????????????????????????????????????????????????????????
 
 ///Задача-15.Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true,
 //  якщо num1 менше або дорівнює num2. В іншому випадку функція повинна повернути булеве значення false.
 
+// function compareNumb(num1, num2) {
+//   if (num1 >= num2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(compareNumb(2, 5));
+
 ///Задача-17.Напишіть функцію, яка приймає рядок str. Функція повинна повернути булеве значення true,
 // якщо перша літера str є голосною (a, e, i, o, u). В іншому випадку функція повинна повернути булеве значення false.
+
+//function searchLet(str) {
+//  const newStr = str.toLowerCase();
+//  const letter1 = newStr[0];
+//  switch (letter1) {
+//    case 'a':
+//      return true;
+//    case 'e':
+//      return true;
+//    case 'i':
+//      return true;
+//    case 'o':
+//      return true;
+//    case 'u':
+//      return true;
+//
+//    default:
+//      return false;
+//  }
+//}
+
+//console.log(searchLet('Iudsgkgd'));
 
 ///Задача-19.Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true,
 // якщо num1 і num2 рівні. В іншому випадку функція повинна повернути булеве значення false.
 
+// function compareNumb(num1, num2) {
+//   if (num1 === num2) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(compareNumb(3, 3));
+
 ///Задача-20.Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true,
 // якщо num більше або дорівнює нулю. В іншому випадку функція повинна повернути булеве значення false.
+
+// function compareNumb(num) {
+//   if (num >= 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(compareNumb(-3));
 
 ///Задача-21.Напишіть функцію, яка приймає рядок str. Функція повинна повернути булеве значення true,
 // якщо довжина str є парною. В іншому випадку функція повинна повернути булеве значення false.
 
+// function compareLet(str){
+//     const sumLet = str.length;
+//     console.log(sumLet);
+//     if (sumLet%2 === 0){
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
+
+// console.log (compareLet("JGHkjhjnsufhsjf  fjdf"));
+
 ///Задача-22.Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true,
 // якщо num1 ділиться на 2, а num2 не ділиться на 2. В іншому випадку функція повинна повернути булеве значення false.
+
+// function compareNum(num1, num2) {
+//   if (num1 % 2 === 0 && num2 % 2 !== 0) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+
+// console.log(compareNum(4, 7));
 
 ///Задача-23.Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true,
 // якщо num більше 100, але менше 200. В іншому випадку функція повинна повернути булеве значення false.
 
+// function compareNum(num) {
+//   if (num>100 && num <200) {
+//     return true;
+//   } else {
+//     return false;
+//   }
+// }
+// console.log(compareNum(194));
+
 ///Задача-24.Напишіть функцію, яка приймає рядок str. Функція повинна повернути булеве значення true,
 //  якщо str містить лише маленькі літери. В іншому випадку функція повинна повернути булеве значення false. Підказка: допоможе toLowerCase();
+
+// function searchLet(str) {
+//   return /^[a-z]+$/.test(str);
+// }
+// console.log(searchLet('ygjhghg'));
 
 ///Задача-25.Напишіть функцію, яка приймає два параметри str1 та str2. Функція повинна повернути булеве значення true,
 // якщо str1 є частиною str2. В іншому випадку функція повинна повернути булеве значення false.
