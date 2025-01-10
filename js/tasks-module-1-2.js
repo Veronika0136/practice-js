@@ -258,8 +258,27 @@
 ///Задача-25.Напишіть функцію, яка приймає два параметри str1 та str2. Функція повинна повернути булеве значення true,
 // якщо str1 є частиною str2. В іншому випадку функція повинна повернути булеве значення false.
 
+// function hasLet(str1, str2) {
+//   const str11 = str1.toLowerCase();
+//   const str22 = str2.toLowerCase();
+
+//   const res = str22.includes(str11);
+
+//   return res;
+// }
+
+// console.log(hasLet('Aliona', 'Veronika'));
+
 ///Задача-26.Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true,
 // якщо num є негативним числом. В іншому випадку функція повинна повернути булеве значення false.
+
+// function compareNum(num) {
+//   const res = num < 0;
+
+//   return res;
+// }
+
+// console.log(compareNum(5));
 
 ///Задача-27.Напишіть функцію, яка приймає два параметри num1 та num2. Функція повинна повернути булеве значення true,
 // якщо різниця між num1 та num2 більше 50. В іншому випадку функція повинна повернути булеве значення false.
@@ -279,57 +298,100 @@
 ///Задача-28.Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num є нуль.
 //  В іншому випадку функція повинна повернути булеве значення false.
 
+// function compareNum(num) {
+//   const res = num === 0;
+
+//   return res;
+// }
+
+// console.log(compareNum(0));
+
 ///Задача-29.Напишіть функцію, яка приймає два параметри str1 та str2. Функція повинна повернути булеве значення true,
 // якщо остання літера str1 є голосною (a, e, i, o, u). В іншому випадку функція повинна повернути булеве значення false.
+
+// function searchLet(str1, str2) {
+//   const newStr = str1.toLowerCase();
+//   const letter1 = newStr[newStr.length - 1];
+
+//   console.log(letter1);
+//   switch (letter1) {
+//     case 'a':
+//       return true;
+//     case 'e':
+//       return true;
+//     case 'i':
+//       return true;
+//     case 'o':
+//       return true;
+//     case 'u':
+//       return true;
+
+//     default:
+//       return false;
+//   }
+// }
+
+// console.log(searchLet('Iudsgkg', 'hgfhj'));
 
 ///Задача-30.Напишіть функцію, яка приймає число num. Функція повинна повернути булеве значення true, якщо num є кратним 10.
 // В іншому випадку функція повинна повернути булеве значення false.
 
+// function compareNum(num) {
+//   return num % 10 === 0;
+// }
+
+// console.log(compareNum(101));
+
 ///Task 1.Напиши скрипт, який виводить у консоль заокруглені вгору/вниз і т.д. значення змінної value.
 // Використовуй методи Math.floor(), Math.ceil() та Math.round(). Перевір що буде в консолі при значеннях 27.3 та 27.9. const value = 27.5;
 
+// function task1(value) {
+//   console.log(Math.round(value));
+//   console.log(Math.ceil(value));
+//   console.log(Math.floor(value));
+// }
+
+
 ///Task 2. Яким буде результат виразів?
 
-//console.log(5 > 4);
-//console.log(10 >= '7');
-//console.log('2' > '12');
-//console.log('2' < '12');
-//console.log('4' == 4);
-//console.log('6' === 6);
-//console.log('false' === false);
-//console.log(1 == true);
-//console.log(1 === true);
-//console.log('0' == false);
-//console.log('0' === false);
-//console.log('Papaya' < 'papaya');
-//console.log('Papaya' === 'papaya');
-//console.log(undefined == null);
-//console.log(undefined === null);
+// console.log(5 > 4); //true
+// console.log(10 >= '7'); // ???? true
+// console.log('2' > '12'); // true
+// console.log('2' < '12'); // false
+// console.log('4' == 4); // true
+// console.log('6' === 6); // false
+// console.log('false' === false); //false
+// console.log(1 == true); // true
+// console.log(1 === true); // false
+// console.log('0' == false); // true
+// console.log('0' === false); // false
+// console.log('Papaya' < 'papaya'); // true
+// console.log('Papaya' === 'papaya'); //false
+// console.log(undefined == null); //true
+// console.log(undefined === null); // false
 
 ///Task 3.Напиши скрипт який переведе значення totalMinutes (кількість хвилин) рядок у форматі годин та хвилин HH:MM.
 // 70 покаже 01:10
 // 450 покаже 07:30
 // 1441 покаже 24:01
-// const totalMinutes = 70;
+// const totalMinutes = 1441;
 
-//const hours = Math.floor(totalMinutes / 60);
-//const minutes = totalMinutes % 60;
-//console.log(hours);
-//console.log(minutes);
+// const hours = Math.floor(totalMinutes / 60);
+// const minutes = totalMinutes % 60;
+// console.log(hours);
+// console.log(minutes);
 
-//const doubleDigitHours = String(hours).padStart(2, 0);
-//const doubleDigitMinutes = String(minutes).padStart(2, 0);
-//console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
+// const doubleDigitHours = String(hours).padStart(2, 0);
+// const doubleDigitMinutes = String(minutes).padStart(2, 0);
+// console.log(`${doubleDigitHours}:${doubleDigitMinutes}`);
 
 ///Task 4. Отрефактори код так, щоб у змінну value присвоювалося значення змінної incomingValue,
 // якщо воно не дорівнює undefined або null. У в іншому випадку має надаватися значення defaultValue.
 // Перевір роботу скрипта для сліпучих значень змінної incomingValue: null, undefined, 0, false. Використовуй оператор "?"
 //  (nullish coalescing operator).
 
-//const incomingValue = 5;
-//const defaultValue = 10;
-//const value = incomingValue || defaultValue;
-//console.log(value);
-
-
-
+// const incomingValue = "null";
+// const defaultValue = 10;
+// const value = incomingValue !== undefined || incomingValue !== null ? incomingValue : defaultValue;
+// console.log(value);
+// ???????????????????????????
