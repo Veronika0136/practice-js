@@ -84,7 +84,6 @@
 //Напишіть функцію, яка приймає два параметри: isLoggedIn (булевий) та hasAdminRights (булевий). Якщо ви увійшли в систему і маєте права адміністратора,
 //поверніть "Адмін-сторінка", якщо увійшли, але не є адміністратором, поверніть "Користувач", в іншому випадку - "Гість".
 
-
 // Задача-13
 // Напишіть функцію, яка приймає два параметри: time та isWeekend. Якщо time менше 12 і це не вихідний день, поверніть "Ранок буднього дня",
 // якщо більше 12 і менше 18 і це вихідний, поверніть "День вихідного дня", в іншому випадку поверніть "Вечір".
@@ -105,3 +104,48 @@
 // console.log(checkPartDay(15, 'Неділя'));
 // console.log(checkPartDay(10, 'Неділя'));
 // console.log(checkPartDay(11, 'Понеділок'));
+
+// Задача-14
+//Напишіть функцію, яка приймає два параметри: hasGlutenAllergy (булевий) та containsGluten (булевий).
+// Якщо у вас є алергія на глютен і продукт містить глютен, поверніть "Не можна їсти", в іншому випадку поверніть "Можна їсти".
+
+// function checkProduct(hasGlutenAllergy, containsGluten) {
+//   if (hasGlutenAllergy && containsGluten) {
+//     return 'Не можна їсти';
+//   } else {
+//     return 'Можна їсти';
+//   }
+// }
+
+// console.log(checkProduct(true, true));
+// console.log(checkProduct(true, false));
+
+// Задача-51
+// Напишіть функцію, яка приймає один параметр continent. Використовуючи switch, поверніть назву континенту або "Невідомий континент"
+// в залежності від введеного значення. Наприклад, "Africa", "Europe", "Asia", "North America", "South America", "Antarctica",
+// "Australia" - відомі континенти, інші випадки - "Невідомий континент".
+
+// function checkContinent(continent) {
+//   switch (continent) {
+//     case 'Africa':
+//       return 'Africa';
+//     case 'Europe':
+//       return 'Europe';
+//     case 'Asia':
+//       return 'Asia';
+//     case 'North America':
+//       return 'North America';
+//     case 'South America':
+//       return 'South America';
+//     case 'Antarctica':
+//       return 'Antarctica';
+//     case 'Australia':
+//       return 'Australia';
+
+//     default:
+//       return 'Невідомий континент';
+//   }
+// }
+
+// console.log(checkContinent('Latvia'));
+// console.log(checkContinent('Europe'));
