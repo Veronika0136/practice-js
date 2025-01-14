@@ -25,16 +25,139 @@
 // console.log(getItem(['a', 'd', 'f', 'gg', 'rtre']));
 
 // Напиши функцію, яка приймає масив чисел та виводить лише парні числа у консоль.
+
+// function checkNumbers(array) {
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 === 0) {
+//       console.log(array[i]);
+//     }
+//   }
+//   return array;
+// }
+
+// console.log(checkNumbers([2, 5, 4, 6, 8, 1, 3]));
+
 // Напиши функцію, яка приймає два параметри (arr, max). Де arr - це масив чисел. Потрібно вивести лише ті елементи масиву які більші за max.
+
+// function checkNumbers(arr, max) {
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > max) {
+//       console.log(arr[i]);
+//     }
+//   }
+//   return arr;
+// }
+
+// console.log(checkNumbers([3, 7, 19, 43, 22, 12, 6], 10));
+
 // Напиши функцію яка приймає масив та повертає суму всіх чисел у масиві.
+
+// function calculetTotal(arr) {
+//   let total = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     total += arr[i];
+//   }
+
+//   return total;
+// }
+
+// console.log(calculetTotal([2, 5, 15, 1, 3]));
+
 // Напиши функцію яка приймає масив та елемент для пошуку. Фукнція повинна порахувати скільки разів шуканий елемент зустрічається у масиві.
+
+// function checkSearch(arr, elem) {
+//   let x = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] === elem) {
+//       x += 1;
+//     }
+//   }
+
+//   return x;
+// }
+
+// console.log(checkSearch([5, 12, 5, 34, 5, 7, 45, 5, 17, 38, 5], 5));
+
 // Напиши функцію яка приймає масив чисел. Функція повинна видалити усі негативні(відємні числа) з масиву та повернути новий масив.
-// Напиши функцію яка приймає масив рядочків. Потрібно змінити кожен елемент масиву наступним чином - якщо довжина рядочку менша за 6 до привести рядок до нижнього регістру, в іншому випадку привести до верхнього регістру.
+
+// function changeArray(arr) {
+//   let arr2 = [];
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i] > 0) {
+//       arr2.push(arr[i]);
+//     }
+//   }
+//   return arr2;
+// }
+// console.log(changeArray([2, 0, -5, 45, -12, 15]));
+
+// Напиши функцію яка приймає масив рядочків. Потрібно змінити кожен елемент масиву наступним чином - якщо довжина рядочку менша за 6
+// до привести рядок до нижнього регістру, в іншому випадку привести до верхнього регістру.
+
+// function changeLetters(arr) {
+//   let arr2 = [];
+
+//   for (let i = 0; i < arr.length; i++) {
+//     if (arr[i].length < 6) {
+//       arr2.push(arr[i].toLowerCase());
+//     } else {
+//       arr2.push(arr[i].toUpperCase());
+//     }
+//   }
+//   return arr2;
+// }
+// console.log(changeLetters(['asdgregha', 'sfeffe', 'dfgaegrb', 'fewgf', 'aesfwawgg']));
+
 // Напиши функцію, яка приймає масив чисел і повертає новий масив, що містить лише непарні числа.
+
+// function changeNumbers(array) {
+//   let array2 = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 2 !== 0) {
+//       array2.push(array[i]);
+//     }
+//   }
+//   return array2;
+// }
+
+// console.log(changeNumbers([2, 3, 4, 5, 6, 1, 11, 15, 8]));
+
 // Напиши функцію, яка приймає масив чисел і повертає новий масив, де кожне число помножене на індекс, за яким воно знаходиться в масиві.
+
+// function calculateNumbers(arr) {
+//   let arr2 = [];
+//   let x = 0;
+
+//   for (let i = 0; i < arr.length; i++) {
+//     x = arr.indexOf(arr[i]);
+//     arr2.push(arr[i] * x);
+//   }
+
+//   return arr2;
+// }
+
+// console.log(calculateNumbers([1, 2, 3, 4, 5]));
+
 // Напиши функцію, яка приймає масив чисел і повертає новий масив, що містить лише числа, які діляться на 3.
+
+// function changeNumbers(array) {
+//   let array2 = [];
+//   for (let i = 0; i < array.length; i++) {
+//     if (array[i] % 3 === 0) {
+//       array2.push(array[i]);
+//     }
+//   }
+//   return array2;
+// }
+
+// console.log(changeNumbers([2, 3, 4, 5, 9, 6, 12, 11, 15, 8]));
+
 // Середні задачі
 // Напиши функцію яка приймає два масиви (arr1, arr2), та повертає новий масив де будуть лише ті елементи які зустрічаються і в arr1 і arr2.
+
+
 // Напиши функцію яка приймає два масиви (arr1, arr2), та повертає новий масив де будуть лише елементи масиву arr1 яких не має у масиві arr2.
 // Напиши функцію яка приймає масив та знаходить мінімальний елемент.
 // Напиши функцію яка приймає масив та знаходить максимальний елемент.
