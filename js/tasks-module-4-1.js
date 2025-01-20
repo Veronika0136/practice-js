@@ -213,17 +213,79 @@
 // Якщо в об'єкті вже є "email", нічого не роби.
 // Поверни оновлений об'єкт.
 
+// const obj1 = {
+//   name: 'Veronika',
+//   age: 38,
+//   address: 'Veca Bikernieku',
+// };
+
+// function addEmailToObject(obj, newEmail) {
+//   if (!obj.hasOwnProperty('email')) {
+//     obj.email = newEmail;
+//   }
+//   return obj;
+// }
+// console.log(addEmailToObject(obj1));
+
 // Напиши функцію, яка приймає об'єкт і змінює тип значення властивості "age" з числа на рядок.
 // Поверни оновлений об'єкт.
+
+// const obj1 = {
+//   name: 'Veronika',
+//   age: 38,
+//   address: 'Veca Bikernieku',
+// };
+
+// function changeAge(obj) {
+//   obj.age = obj.age.toString();
+
+//   return obj;
+// }
+
+// console.log(changeAge(obj1));
 
 // Напиши функцію, яка приймає об'єкт і змінює значення властивості "address", але тільки якщо ця властивість вже існує.
 // Якщо її немає, поверни об'єкт без змін.
 
+// const obj1 = {
+//   name: 'Veronika',
+//   age: 38,
+//   address: 'Veca Bikernieku',
+// };
+
+// function changeAddress(obj) {
+//   if (obj.hasOwnProperty('address')) {
+//     obj.address = 'new address';
+//   }
+//   return obj;
+// }
+
+// console.log(changeAddress(obj1));
+
 // Напиши функцію, яка приймає об'єкт користувача з властивостями name та сity.
 // Та повертає рядок "User {імя користувача} from {місто користувача}!"
 
+// const obj3 = {
+//     name: "Aliona",
+//     city: "Riga",
+// };
+
+// function getStr(obj){
+//     return `User ${obj.name} from ${obj.city}`;
+// }
+
+// console.log(getStr(obj3));
+
+
 // Напиши функцію, яка приймає масив з ключами і значеннями (наприклад, [["name", "John"], ["age", 25],
 // ["address", "123 Street"]]) і створює об'єкт з цих пар. Поверни об'єкт.
+
+const arr = [["name", "John"], ["age", 25],
+["address", "123 Street"]];
+
+function getObject(arr){
+
+}
 
 // Напиши функцію, яка приймає масив об'єктів і змінює в кожному з них властивість "age", збільшуючи її на 1.
 // Поверни оновлений масив об'єктів.
