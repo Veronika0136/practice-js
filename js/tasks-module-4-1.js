@@ -276,19 +276,46 @@
 
 // console.log(getStr(obj3));
 
-
 // Напиши функцію, яка приймає масив з ключами і значеннями (наприклад, [["name", "John"], ["age", 25],
 // ["address", "123 Street"]]) і створює об'єкт з цих пар. Поверни об'єкт.
 
-const arr = [["name", "John"], ["age", 25],
-["address", "123 Street"]];
+// const arr = [
+//   ['name', 'John'],
+//   ['age', 25],
+//   ['address', '123 Street'],
+// ];
 
-function getObject(arr){
+// function getObject(array) {
+//   let obj = {};
+//   const newAray = array.join(',');
+//   const arr1 = newAray.split(',');
+//   console.log(arr1);
+//   for (let i = 0; i < arr1.length; i++) {
+//     obj[arr1[0]] = arr1[1];
+//     obj[arr1[2]] = arr1[3];
+//     obj[arr1[4]] = arr1[5];
+//   }
+//   return obj;
+// }
 
-}
+// console.log(getObject(arr));
+
+// function arrayToObject(arr) {
+//     let obj = {};
+//     arr.forEach(item => {
+//       obj[item[0]] = item[1];
+//     });
+//     return obj;
+//   }
+  
+//   let inputArray = [["name", "John"], ["age", 25], ["address", "123 Street"]];
+//   let resultObject = arrayToObject(inputArray);
+//   console.log(resultObject);
 
 // Напиши функцію, яка приймає масив об'єктів і змінює в кожному з них властивість "age", збільшуючи її на 1.
 // Поверни оновлений масив об'єктів.
+
+
 
 // Створіть об'єкт contactBook, який зберігатиме список контактів та надаватиме методи для додавання, видалення та пошуку контактів.
 
