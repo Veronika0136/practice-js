@@ -307,7 +307,7 @@
 //     });
 //     return obj;
 //   }
-  
+
 //   let inputArray = [["name", "John"], ["age", 25], ["address", "123 Street"]];
 //   let resultObject = arrayToObject(inputArray);
 //   console.log(resultObject);
@@ -315,9 +315,25 @@
 // Напиши функцію, яка приймає масив об'єктів і змінює в кожному з них властивість "age", збільшуючи її на 1.
 // Поверни оновлений масив об'єктів.
 
+// const team = [
+//   { name: 'Vasya', city: 'Dnepr', age: 17 },
+//   { name: 'Slava', city: 'Lviv', age: 21 },
+//   { name: 'Nikolay', city: 'Odessa', age: 32 },
+//   { name: 'Petr', city: 'Poltava', age: 25 },
+// ];
 
+// function changeAge(arr) {
+//   for (const element of arr) {
+//     element.age = element.age + 1;
+//   }
+//   return arr;
+// }
+
+// console.log(changeAge(team));
 
 // Створіть об'єкт contactBook, який зберігатиме список контактів та надаватиме методи для додавання, видалення та пошуку контактів.
+
+
 
 // Створіть об'єкт rectangle, який представлятиме прямокутник з методами для обчислення його площі та периметра.
 // Об'єкт повинен приймати довжини двох сторін під час створення.
