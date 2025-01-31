@@ -333,13 +333,40 @@
 
 // Створіть об'єкт contactBook, який зберігатиме список контактів та надаватиме методи для додавання, видалення та пошуку контактів.
 
-
+// const contactBook = {
+//   contacts: [],
+//   addContact(newContact) {
+//     this.contacts.push(newContact);
+//   },
+//   deleteContact(contact1) {},
+//   searchContact(contact2) {
+//     this.contacts.includes('contact2');
+//   },
+// };
 
 // Створіть об'єкт rectangle, який представлятиме прямокутник з методами для обчислення його площі та периметра.
 // Об'єкт повинен приймати довжини двох сторін під час створення.
 
+// const rectangle = {
+//   length: 20,
+//   height: 15,
+//   calculateS() {
+//     return this.length * this.height;
+//   },
+//   calculateP() {
+//     return this.length * 2 + this.height * 2;
+//   },
+// };
+
 // Створіть об'єкт toDoList, який зберігатиме список задач та надаватиме методи для додавання нових завдань,
 // позначки задачі як виконаної та виведення списку завдань.
+
+// const toDoList = {
+//   tascks: [],
+//   addNewTasck(newTasck) {
+//     this.tascks.push(newTasck);
+//   },
+// };
 
 // Створіть об'єкт bankAccount, який представлятиме банківський рахунок із методами для депозиту, зняття коштів та перевірки балансу.
 //  Врахуйте обробку можливих помилок (наприклад, недостатньо коштів).
