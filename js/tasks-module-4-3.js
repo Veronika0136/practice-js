@@ -667,17 +667,173 @@ const cars = [
 ];
 
 // Знайти авто заданого кольору
+
+// function searhGenre(arr, color) {
+//   const array = [];
+//   for (const item of arr) {
+//     if (item.color === color) {
+//       array.push(item);
+//     }
+//   }
+//   return array;
+// }
+
+// console.table(searhGenre(cars, 'Black'));
+
 // Знайти усі спорткари
+
+// function searhGenre(arr) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.isSportCar) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars));
+
 // Знайти авто 2022 року
+
+// function searhGenre(arr,year) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.year === year) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 2022));
+
 // Знайти авто певної марки
+
+// function searhGenre(arr,brand) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.brand === brand) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars,"Toyota"));
+
 // Знайти авто дорожче заданої ціни
+
+// function searhGenre(arr,price) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.price >= price) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 50000));
+
 // Знайти авто заданого типу
+
+// function searhGenre(arr,type) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.type === type) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 'Coupe'));
+
 // Знайти авто з кількістю більше ніж задане значення
+
+// function searhGenre(arr,amount) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.amount > amount) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 2));
+
 // Знайти авто, випущені після 2018 року
+
+// function searhGenre(arr,year) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.year > year) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 2018));
+
 // Знайти авто, випущені до 2015 року
+
+// function searhGenre(arr,year) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.year < year) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 2020));
+
 // Знайти авто, ціна яких в межах від 20000 до 40000
+
+// function searhGenre(arr) {
+//   const array = [];
+//   for (const item of arr) {
+//     if (item.price >= 20000 && item.price <= 40000) {
+//       array.push(item);
+//     }
+//   }
+//   return array;
+// }
+
+// console.table(searhGenre(cars));
+
 // Знайти всі авто, які не є спортивними
+
+// function searhGenre(arr) {
+//   const array = [];
+//   for (const item of arr) {
+//     if (!item.isSportCar) {
+//       array.push(item);
+//     }
+//   }
+//   return array;
+// }
+
+// console.table(searhGenre(cars));
+
 // Знайти всі авто чорного кольору
+
+// function searhGenre(arr, color) {
+//   const array = [];
+//   for (const item of arr) {
+//     if (item.color === color) {
+//       array.push(item);
+//     }
+//   }
+//   return array;
+// }
+
+// console.table(searhGenre(cars, 'Black'));
+
 // Знайти всі автомобілі марки 'BMW'
 // Знайти всі авто типу 'SUV'
 // Знайти всі авто, що мають ціну менше ніж 30000
@@ -696,8 +852,7 @@ const cars = [
 // Знайти всі авто марки 'Lexus'
 // Знайти всі авто, випущені до 2017 року
 // Знайти всі авто білого кольору
-// Знайти авто заданого кольору
-// Знайти усі спорткари
+
 // Порахувати кількість авто заданого року
 // Знайти всі машини з ціною вище вказаної.
 // Порахувати кількість машин вказаного року.
