@@ -835,12 +835,89 @@ const cars = [
 // console.table(searhGenre(cars, 'Black'));
 
 // Знайти всі автомобілі марки 'BMW'
+
+// function searhGenre(arr, brand) {
+//   const array = [];
+//   for (const item of arr) {
+//     if (item.brand === brand) {
+//       array.push(item);
+//     }
+//   }
+//   return array;
+// }
+
+// console.table(searhGenre(cars, 'BMW'));
+
 // Знайти всі авто типу 'SUV'
+
+// function searhGenre(arr, type) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.type === type) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 'SUV'));
+
 // Знайти всі авто, що мають ціну менше ніж 30000
+
+// function searhGenre(arr, price) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.price < price) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 30000));
+
 // Знайти всі авто, що мають ціну більше ніж 50000
+
+// function searhGenre(arr, price) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.price > price) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 50000));
+
 // Знайти всі авто, випущені після 2021 року
+
+// function searhGenre(arr, year) {
+//     const array = [];
+//     for (const item of arr) {
+//       if (item.year > year) {
+//         array.push(item);
+//       }
+//     }
+//     return array;
+//   }
+
+//   console.table(searhGenre(cars, 2021));
+
 // Знайти всі авто марки 'Audi'
-// Знайти всі авто, що мають кількість більше 2
+
+// function searhGenre(arr, brand) {
+//   const array = [];
+//   for (const item of arr) {
+//     if (item.brand === brand) {
+//       array.push(item);
+//     }
+//   }
+//   return array;
+// }
+
+// console.table(searhGenre(cars, 'Audi'));
+
 // Знайти всі авто червоного кольору
 // Знайти всі авто, які є седанами
 // Знайти всі авто марки 'Mercedes'
@@ -854,22 +931,64 @@ const cars = [
 // Знайти всі авто білого кольору
 
 // Порахувати кількість авто заданого року
+
+// function searhGenre(arr, year) {
+//   const array = [];
+//   for (const item of arr) {
+//     if (item.year > year) {
+//       array.push(item);
+//     }
+//   }
+//   return array.length;
+// }
+
+// console.table(searhGenre(cars, 2021));
+
 // Знайти всі машини з ціною вище вказаної.
 // Порахувати кількість машин вказаного року.
 // Відсортувати машини за роком випуску (від найстарішого до найновішого).
 // Знайти найдорожчу машину.
 // Знайти всі машини заданої марки (наприклад, Toyota).
 // Порахувати загальну кількість машин.
+
+// function searhGenre(arr) {
+//   return arr.length;
+// }
+
+// console.table(searhGenre(cars));
+
 // Відсортувати машини за ціною (від найдешевшої до найдорожчої).
 // Знайти всі машини певного типу (наприклад, SUV).
 // Знайти всі машини певного кольору та року випуску.
 // Порахувати середню ціну всіх машин.
+
+// function searhGenre(arr) {
+//   let total = 0;
+//   for (const item of arr) {
+//     total += item.price;
+//   }
+//   return total / arr.length;
+// }
+
+// console.table(searhGenre(cars));
+
 // Знайти всі машини, у яких кількість на складі більша за 0.
 // Знайти всі машини з ціною менше 30000 та роком випуску після 2020 року.
 // Порахувати сумарну кількість всіх машин заданої марки.
 // Відсортувати машини за кількістю на складі (від найбільшої до найменшої).
 // Знайти всі машини, які не є спортивними та доступні для продажу.
 // Порахувати загальну вартість всіх машин складі.
+
+// function searhGenre(arr) {
+//   let total = 0;
+//   for (const item of arr) {
+//     if (item.amount !== 0) total += item.price * item.amount;
+//   }
+//   return total;
+// }
+
+// console.table(searhGenre(cars));
+
 // Знайти всі машини певного типу та кольору.
 // Відсортувати машини за брендом та моделлю в алфавітному порядку.
 // Перевірити, чи є хоч одна машина певного кольору.
@@ -877,6 +996,17 @@ const cars = [
 // Перевірити, чи є всі авто є спроткарами.
 // Перевірити, чи є всі новіші за вказаний рік.
 // Створити новий масив, що містить лише назви моделей усіх машин.
+
+// function searhGenre(arr) {
+//   const array = [];
+//   for (const item of arr) {
+//     array.push(item.model);
+//   }
+//   return array;
+// }
+
+// console.log(searhGenre(cars));
+
 // Створити масив, що містить розмітку кожної машини.
 // Знайти індекс першої машини з роком випуску 2022 року.
 // Сортувати за ціною
