@@ -1,42 +1,121 @@
 // Callback
-// Сума чисел: Напишіть функцію sumArray(numbers, callback), яка приймає масив чисел numbers та колбек callback. Функція повинна обчислити суму 
+// Сума чисел: Напишіть функцію sumArray(numbers, callback), яка приймає масив чисел numbers та колбек callback. Функція повинна обчислити суму
 // чисел у масиві та передати результат у колбек.
 
-// Подвоєння чисел: Напишіть функцію doubleArray(numbers, callback), яка приймає масив чисел numbers та колбек callback. Функція повинна подвоїти 
+// function sumResult(total) {
+//   console.log(`Сумма чисел в массиве ${total}`);
+// }
+
+// function sumArray(numbers, callback) {
+//   let total = 0;
+//   for (const number of numbers) {
+//     total += number;
+//   }
+//   callback(total);
+// }
+
+// sumArray([4, 7, 2, 4, 1], sumResult);
+
+// Подвоєння чисел: Напишіть функцію doubleArray(numbers, callback), яка приймає масив чисел numbers та колбек callback. Функція повинна подвоїти
 // кожне число в масиві та передати новий масив у колбек.
+
+// function changeArr(arr) {
+//   console.log(arr);
+// }
+
+// function doubleArray(numbers, callback) {
+//   let arr1 = [];
+//   for (const item of numbers) {
+//     arr1.push(item * 2);
+//   }
+//   changeArr(arr1);
+// }
+
+// doubleArray([2, 3, 4, 5], changeArr);
 
 // Фільтр слів: Напишіть функцію filterWords(words, condition, callback), яка приймає масив рядків words, функцію condition (перевірка рядка) та
 // колбек callback. Функція повинна фільтрувати слова масиву за допомогою переданої умови та передати відфільтрований масив у колбек.
 
-// Капіталізація рядків: Напишіть функцію capitalizeStrings(strings, callback), яка приймає масив рядків strings та колбек callback. Функція повинна 
+// function logNewArr(arr) {
+//   console.log(`Відфільтрованній масив: ${arr}`);
+// }
+
+// function filterWords(words, condition, callback) {
+//   let arr = [];
+//   for (const word of words) {
+//     if (word.includes(condition)) {
+//       arr.push(word);
+//     }
+//   }
+//   logNewArr(arr);
+// }
+
+// filterWords(['Veronika', 'Aliona', 'Liza', 'Oleg', 'Sergey'], 'e', logNewArr);
+
+// Капіталізація рядків: Напишіть функцію capitalizeStrings(strings, callback), яка приймає масив рядків strings та колбек callback. Функція повинна
 // перетворити всі рядки в масиві, роблячи першу літеру кожного рядка великої, і передати перетворений масив в колбек.
+
+// function logNewArr(arr) {
+//   console.log(`Відновлений масив: ${arr}`);
+// }
+
+// function capitalizeStrings(strings, callback) {
+//   let arr = [];
+//   for (const str of strings) {
+//     arr.push(str[0].toUpperCase() + str.slice(1));
+//   }
+//   callback(arr);
+// }
+
+// capitalizeStrings(['sfas', 'sfag', 'gdsag'], logNewArr);
 
 // Сортування чисел: Напишіть функцію sortNumbers(numbers, callback), яка приймає масив чисел numbers та колбек callback. Функція повинна відсортувати
 //  числа в масиві за зростанням та передати відсортований масив у колбек.
 
+// const sortNumbers = (numbers, callback) => {
+//   numbers.sort((a, b) => a - b);
+//   callback(numbers);
+// };
+
+// // Приклад виклику функції sortNumbers
+// const numbers = [5, 3, 8, 1, 2];
+// sortNumbers(numbers, sortedNumbers => {
+//   console.log(sortedNumbers);
+// });
+
 // Пошук максимуму: Напишіть функцію findMax(numbers, callback), яка приймає масив чисел numbers та колбек callback. Функція повинна знайти максимальне
 //  число в масиві та передати його в колбек.
+
+// function maxNumb(number) {
+//   console.log(`Максимальне число в масиві: ${number}`);
+// }
+
+// function findMax(numbers, callback) {
+//   const number = Math.max(...numbers);
+//   callback(number);
+// }
+
+// findMax([6, 90, 76, 143, 56, 33, 57], maxNumb);
 
 // Перевірка на парність: Напишіть функцію checkEven(numbers, callback), яка приймає масив чисел numbers та колбек callback. Функція повинна перевірити,
 //  чи всі числа в масиві парні, і передати результат перевірки колбек.
 
-// Об'єднання рядків: Напишіть функцію concatStrings(strings, separator, callback), яка приймає масив рядків strings, рядок separator та колбек 
+// Об'єднання рядків: Напишіть функцію concatStrings(strings, separator, callback), яка приймає масив рядків strings, рядок separator та колбек
 // callback. Функція повинна об'єднати рядки з масиву, розділяючи їх переданим роздільником, і передати рядок, що вийшов, в колбек.
 
 // Перетворення в числа: Напишіть функцію parseNumbers(strings, callback), яка приймає масив рядків strings та колбек callback. Функція повинна
 //  перетворити кожен рядок з масиву на число і передати новий масив чисел в колбек.
 
-// Підрахунок символів: Напишіть функцію countCharacters(strings, callback), яка приймає масив рядків strings та колбек callback. Функція повинна 
+// Підрахунок символів: Напишіть функцію countCharacters(strings, callback), яка приймає масив рядків strings та колбек callback. Функція повинна
 // підрахувати загальну кількість символів у всіх рядках масиву та передати результат у колбек.
 
-// Успіхів у вирішенні цих завдань! Кожна з них дозволить вам практикуватися у використанні колбек функцій для обробки даних та керування потоком 
+// Успіхів у вирішенні цих завдань! Кожна з них дозволить вам практикуватися у використанні колбек функцій для обробки даних та керування потоком
 // виконання.
-
 
 // Example 1 - Коллбек функции
 // Напишите следующие функции:
 
-// createProduct(obj, callback) - принимает объект товара без id, а также колбек. Функция создаёт обьект товара, добавляя ему уникальный 
+// createProduct(obj, callback) - принимает объект товара без id, а также колбек. Функция создаёт обьект товара, добавляя ему уникальный
 // идентификатор в свойство id и вызывает колбек передавая ему созданный обьект.
 // logProduct(product) - коллбек принимающий обьект продукта и логирующий его в консоль
 // logTotalPrice(product) - коллбек принимающий обьект продукта и логирующий общую стоимость товара в консоль
