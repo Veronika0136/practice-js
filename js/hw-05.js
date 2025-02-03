@@ -1,52 +1,53 @@
 // Задача 1. Імена користувачів
 
-// Напиши стрілочну функцію getUserNames(users), яка прийматиме один параметр users — масив об’єктів користувачів. Функція має повертати масив 
+// Напиши стрілочну функцію getUserNames(users), яка прийматиме один параметр users — масив об’єктів користувачів. Функція має повертати масив
 // імен усіх користувачів (властивість name) із масиву users.
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її викликів.
 
-
+// const getUserNames = users => {
+//   return users.map(user => user.name);
+// };
 
 // console.log(
 //   getUserNames([
-//   {
-//     name: "Moore Hensley",
-//     email: "moorehensley@indexia.com",
-//     balance: 2811
-//   },
-//   {
-//     name: "Sharlene Bush",
-//     email: "sharlenebush@tubesys.com",
-//     balance: 3821
-//   },
-//   {
-//     name: "Ross Vazquez",
-//     email: "rossvazquez@xinware.com",
-//     balance: 3793
-//   },
-//   {
-//     name: "Elma Head",
-//     email: "elmahead@omatom.com",
-//     balance: 2278
-//   },
-//   {
-//     name: "Carey Barr",
-//     email: "careybarr@nurali.com",
-//     balance: 3951
-//   },
-//   {
-//     name: "Blackburn Dotson",
-//     email: "blackburndotson@furnigeer.com",
-//     balance: 1498
-//   },
-//   {
-//     name: "Sheree Anthony",
-//     email: "shereeanthony@kog.com",
-//     balance: 2764
-//   },
-// ])
+//     {
+//       name: 'Moore Hensley',
+//       email: 'moorehensley@indexia.com',
+//       balance: 2811,
+//     },
+//     {
+//       name: 'Sharlene Bush',
+//       email: 'sharlenebush@tubesys.com',
+//       balance: 3821,
+//     },
+//     {
+//       name: 'Ross Vazquez',
+//       email: 'rossvazquez@xinware.com',
+//       balance: 3793,
+//     },
+//     {
+//       name: 'Elma Head',
+//       email: 'elmahead@omatom.com',
+//       balance: 2278,
+//     },
+//     {
+//       name: 'Carey Barr',
+//       email: 'careybarr@nurali.com',
+//       balance: 3951,
+//     },
+//     {
+//       name: 'Blackburn Dotson',
+//       email: 'blackburndotson@furnigeer.com',
+//       balance: 1498,
+//     },
+//     {
+//       name: 'Sheree Anthony',
+//       email: 'shereeanthony@kog.com',
+//       balance: 2764,
+//     },
+//   ])
 // ); // ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head", "Carey Barr", "Blackburn Dotson", "Sheree Anthony"]
-
 
 // Задача 2. Користувачі з другом
 
@@ -57,48 +58,48 @@
 // Функція має повертати масив усіх користувачів із масиву users, у яких є друг з іменем friendName. Друзі кожного користувача зберігаються
 // у властивості friends. Якщо користувачів, у яких є такий друг немає, то функція має повернути порожній масив.
 
-
-
 // Поради:
 
 // Метод filter() можна використовувати для створення нового масиву з елементами, які задовольняють певну умову.
 // Використовуй метод includes() для перевірки, чи масив friends містить friendName.
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
 
-
+// const getUsersWithFriend = (users, friendName) => {
+//   return users.filter(user => user.friends.includes(friendName));
+// };
 
 // const allUsers = [
 //   {
-//     name: "Moore Hensley",
-//     friends: ["Sharron Pace"]
+//     name: 'Moore Hensley',
+//     friends: ['Sharron Pace'],
 //   },
 //   {
-//     name: "Sharlene Bush",
-//     friends: ["Briana Decker", "Sharron Pace"]
+//     name: 'Sharlene Bush',
+//     friends: ['Briana Decker', 'Sharron Pace'],
 //   },
 //   {
-//     name: "Ross Vazquez",
-//     friends: ["Marilyn Mcintosh", "Padilla Garrison", "Naomi Buckner"]
+//     name: 'Ross Vazquez',
+//     friends: ['Marilyn Mcintosh', 'Padilla Garrison', 'Naomi Buckner'],
 //   },
 //   {
-//     name: "Elma Head",
-//     friends: ["Goldie Gentry", "Aisha Tran"]
+//     name: 'Elma Head',
+//     friends: ['Goldie Gentry', 'Aisha Tran'],
 //   },
 //   {
-//     name: "Carey Barr",
-//     friends: ["Jordan Sampson", "Eddie Strong"]
+//     name: 'Carey Barr',
+//     friends: ['Jordan Sampson', 'Eddie Strong'],
 //   },
 //   {
-//     name: "Blackburn Dotson",
-//     friends: ["Jacklyn Lucas", "Linda Chapman"]
+//     name: 'Blackburn Dotson',
+//     friends: ['Jacklyn Lucas', 'Linda Chapman'],
 //   },
 //   {
-//     name: "Sheree Anthony",
-//     friends: ["Goldie Gentry", "Briana Decker"]
-//   }
+//     name: 'Sheree Anthony',
+//     friends: ['Goldie Gentry', 'Briana Decker'],
+//   },
 // ];
 
-// console.log(getUsersWithFriend(allUsers, "Briana Decker")); 
+// console.log(getUsersWithFriend(allUsers, 'Briana Decker'));
 // // [
 // //   {
 // //     name: "Sharlene Bush",
@@ -110,7 +111,7 @@
 // //   }
 // // ]
 
-// console.log(getUsersWithFriend(allUsers, "Goldie Gentry"));
+// console.log(getUsersWithFriend(allUsers, 'Goldie Gentry'));
 // // [
 // //   {
 // //     name: "Elma Head",
@@ -122,7 +123,7 @@
 // //   }
 // // ]
 
-// console.log(getUsersWithFriend(allUsers, "Adrian Cross" )); // []
+// console.log(getUsersWithFriend(allUsers, 'Adrian Cross')); // []
 
 // Задача 3. Сортування за кількістю друзів
 
@@ -131,8 +132,6 @@
 // Функція має повертати масив усіх користувачів, відсортованих за спаданням кількостій їх друзів (властивість friends).
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
-
-
 
 // console.log(
 //   sortByDescendingFriendCount([
@@ -211,19 +210,16 @@
 // //   }
 // // ]
 
-
 // Задача 4. Загальний баланс
 
 // Напиши стрілочну функцію getTotalBalanceByGender(users, gender), яка прийматиме два параметра:
 
 // перший параметр users — масив об’єктів користувачів,
 // другий параметр gender — рядок, що зберігає стать.
-// Функція має використовувати ланцюжок виклику методів та повертати загальний баланс користувачів (властивість balance), стать яких 
+// Функція має використовувати ланцюжок виклику методів та повертати загальний баланс користувачів (властивість balance), стать яких
 // (властивість gender) збігається зі значенням параметра gender.
 
 // Візьми код нижче і встав після оголошення своєї функції для перевірки коректності її роботи. У консоль будуть виведені результати її роботи.
-
-
 
 // const clients = [
 // 	{
