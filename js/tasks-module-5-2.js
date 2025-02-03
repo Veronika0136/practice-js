@@ -394,10 +394,42 @@ const books = [
 // console.table(searhGenre(books, 'Historical', 4.7));
 
 // Знайти першу книгу жанру 'Fantasy'.
+
+// const searhGenre = (arr, genre) =>{
+//   return arr.find(item => item.genre === genre);
+// }
+
+// console.log(searhGenre(books,'Fantasy'));
+
 // Знайти першу книгу, видану після 2000 року.
+
+// const searhYear = (arr, year) => {
+//   return arr.find(item => item.year > year);
+// };
+
+// console.log(searhYear(books, 2000));
+
 // Знайти першу книгу, автором якої є 'Fyodor Dostoevsky'.
+
+// const searhAuthor = (arr,author) => {
+//   return arr.find(item => item.author === author)
+// }
+// console.log(searhAuthor(books,'Fyodor Dostoevsky'));
+
 // Знайти першу книгу з ціною меншою ніж 10 доларів.
+
+// const firstBook = (arr, value) => {
+//   return arr.find(item => item.price < value);
+// };
+// console.log(firstBook(books, 10));
+
 // Знайти першу книгу з рейтингом 4.8 і вище.
+
+// const firstBook = (arr, rating) => {
+//   return arr.find(item => item.rating >= rating);
+// };
+// console.log(firstBook(books, 4.8));
+
 // Знайти першу книгу жанру 'Romance' з ціною меншою ніж 8 доларів.
 // Знайти першу книгу, видану до 1900 року.
 // Знайти першу книгу, що містить слово 'and' у назві.
