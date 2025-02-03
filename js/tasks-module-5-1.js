@@ -99,15 +99,62 @@
 
 // Перевірка на парність: Напишіть функцію checkEven(numbers, callback), яка приймає масив чисел numbers та колбек callback. Функція повинна перевірити,
 //  чи всі числа в масиві парні, і передати результат перевірки колбек.
+// function callback(a) {
+//   console.log(`Чи всі чісла в масиві парні: ${a}`);
+// }
+
+// function checkEven(numbers, callback) {
+//   const isAllEven = numbers.every(number => number % 2 === 0);
+//   callback(isAllEven);
+// }
+
+// checkEven([1, 2, 4, 6, 8, 10], callback);
 
 // Об'єднання рядків: Напишіть функцію concatStrings(strings, separator, callback), яка приймає масив рядків strings, рядок separator та колбек
 // callback. Функція повинна об'єднати рядки з масиву, розділяючи їх переданим роздільником, і передати рядок, що вийшов, в колбек.
 
+// function logStr(str) {
+//   console.log(`${str}`);
+// }
+
+// function concatStrings(strings, separator, callback) {
+//   const str = strings.join(`${separator}`);
+//   logStr(str);
+// }
+
+// concatStrings(['Hello', 'Veronika', 'Good', 'luck'], ' ', logStr);
+
 // Перетворення в числа: Напишіть функцію parseNumbers(strings, callback), яка приймає масив рядків strings та колбек callback. Функція повинна
 //  перетворити кожен рядок з масиву на число і передати новий масив чисел в колбек.
 
+// function logNewArr(arr) {
+//   console.log(arr);
+// }
+
+// function parseNumbers(strings, callback) {
+//   let arr = strings.map(Number);
+
+//   logNewArr(arr);
+// }
+
+// parseNumbers(['Ok', '10', '4'], logNewArr);
+
 // Підрахунок символів: Напишіть функцію countCharacters(strings, callback), яка приймає масив рядків strings та колбек callback. Функція повинна
 // підрахувати загальну кількість символів у всіх рядках масиву та передати результат у колбек.
+
+// function logCalcLett(a) {
+//   console.log(`В цьому масиві ${a} символів`);
+// }
+
+// function countCharacters(strings, callback) {
+//   let total = 0;
+//   for (const str of strings) {
+//     total += str.length;
+//   }
+//   logCalcLett(total);
+// }
+
+// countCharacters(['Veronika', 'Aliona', 'Olga', 'Liza'], logCalcLett);
 
 // Успіхів у вирішенні цих завдань! Кожна з них дозволить вам практикуватися у використанні колбек функцій для обробки даних та керування потоком
 // виконання.
@@ -121,8 +168,24 @@
 // logTotalPrice(product) - коллбек принимающий обьект продукта и логирующий общую стоимость товара в консоль
 // // Решение
 
-// createProduct({ name: "🍎", price: 30, quantity: 3 }, logProduct);
-// createProduct({ name: "🍋", price: 20, quantity: 5 }, logTotalPrice);
+// function logProduct(product) {
+//   console.log(product);
+// }
+
+// function logTotalPrice(product) {
+//   const total = product.price * product.quantity;
+//   console.log(total);
+// }
+
+// function createProduct(obj, callback) {
+//   obj.id = Math.random();
+
+//   callback(obj);
+// }
+
+// createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
+// createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
+
 // Example 2 - Коллбек функции
 // Добавьте объекту account методы withdraw(amount, onSuccess, onError) и deposit(amount, onSuccess, onError), где первый параметр это сумма операции,
 // а второй и третий - колбеки.
@@ -134,8 +197,22 @@
 // const TRANSACTION_LIMIT = 1000;
 
 // const account = {
-//   username: "Jacob",
+//   username: 'Jacob',
 //   balance: 400,
+//   withdraw(amount, onSuccess, onError) {
+//     if (amount > TRANSACTION_LIMIT || amount > this.balance) {
+//       onError('Error: Withdraw amount exceeds transaction limit or account balance.');
+//     } else {
+//       onSuccess('Withdrawal successful!');
+//     }
+//   },
+//   deposit(amount, onSuccess, onError) {
+//     if (amount > TRANSACTION_LIMIT || amount <= 0) {
+//       onError('Error: Deposit amount exceeds transaction limit or is less than or equal to zero.');
+//     } else {
+//       onSuccess('Deposit successful!');
+//     }
+//   },
 // };
 
 // function handleSuccess(message) {
@@ -152,9 +229,18 @@
 // account.deposit(0, handleSuccess, handleError);
 // account.deposit(-600, handleSuccess, handleError);
 // account.deposit(600, handleSuccess, handleError);
+
 // Example 3 - Коллбек функции
 // Напишите функцию each(array, callback), которая первым параметром ожидает массив, а вторым - функцию, которая применится к каждому элементу массива.
 // Функция each должна вернуть новый массив, элементами которого будут результаты вызова коллбека.
+
+// function each(array, callback) {
+//   let result = [];
+//   for (let i = 0; i < array.length; i++) {
+//     result.push(callback(array[i]));
+//   }
+//   return result;
+// }
 
 // console.log(
 //   each([64, 49, 36, 25, 16], function (value) {
@@ -181,31 +267,28 @@
 //     return Math.floor(value);
 //   })
 // );
+
 // Example 4 - Стрелочные функции
 // Выполните рефакторинг кода используя стрелочные функции.
-
-// function createProduct(partialProduct, callback) {
+// const createProduct = (partialProduct, callback) => {
 //   const product = { id: Date.now(), ...partialProduct };
 //   callback(product);
-// }
+// };
 
-// function logProduct(product) {
-//   console.log(product);
-// }
+// const logProduct = product => console.log(product);
 
-// function logTotalPrice(product) {
-//   console.log(product.price * product.quantity);
-// }
+// const logTotalPrice = product => console.log(product.price * product.quantity);
 
-// createProduct({ name: "🍎", price: 30, quantity: 3 }, logProduct);
-// createProduct({ name: "🍋", price: 20, quantity: 5 }, logTotalPrice);
+// createProduct({ name: '🍎', price: 30, quantity: 3 }, logProduct);
+// createProduct({ name: '🍋', price: 20, quantity: 5 }, logTotalPrice);
+
 // Example 5 - Стрелочные функции
 // Выполните рефакторинг кода используя стрелочные функции.
 
 // const TRANSACTION_LIMIT = 1000;
 
 // const account = {
-//   username: "Jacob",
+//   username: 'Jacob',
 //   balance: 400,
 //   withdraw(amount, onSuccess, onError) {
 //     if (amount > TRANSACTION_LIMIT) {
@@ -229,12 +312,9 @@
 //   },
 // };
 
-// function handleSuccess(message) {
-//   console.log(`✅ Success! ${message}`);
-// }
-// function handleError(message) {
-//   console.log(`❌ Error! ${message}`);
-// }
+// const handleSuccess = message => console.log(`✅ Success! ${message}`);
+
+// const handleError = message => console.log(`❌ Error! ${message}`);
 
 // account.withdraw(2000, handleSuccess, handleError);
 // account.withdraw(600, handleSuccess, handleError);
@@ -243,54 +323,41 @@
 // account.deposit(0, handleSuccess, handleError);
 // account.deposit(-600, handleSuccess, handleError);
 // account.deposit(600, handleSuccess, handleError);
+
 // Example 6 - Инлайн стрелочные функции
 // Выполните рефакторинг кода используя стрелочные функции.
 
-// function each(array, callback) {
+// const each = (array, callback) => {
 //   const newArr = [];
 //   for (const el of array) {
 //     newArr.push(callback(el));
 //   }
 //   return newArr;
-// }
+// };
 
-// console.log(
-//   each([64, 49, 36, 25, 16], function (value) {
-//     return value * 2;
-//   })
-// );
-// console.log(
-//   each([64, 49, 36, 25, 16], function (value) {
-//     return value - 10;
-//   })
-// );
-// console.log(
-//   each([64, 49, 36, 25, 16], function (value) {
-//     return Math.sqrt(value);
-//   })
-// );
-// console.log(
-//   each([1.5, 2.1, 16.4, 9.7, 11.3], function (value) {
-//     return Math.ceil(value);
-//   })
-// );
-// console.log(
-//   each([1.5, 2.1, 16.4, 9.7, 11.3], function (value) {
-//     return Math.floor(value);
-//   })
-// );
+// console.log(each([64, 49, 36, 25, 16], value => value * 2));
+// console.log(each([64, 49, 36, 25, 16], value => value - 10));
+// console.log(each([64, 49, 36, 25, 16], value => Math.sqrt(value)));
+// console.log(each([1.5, 2.1, 16.4, 9.7, 11.3], value => Math.ceil(value)));
+// console.log(each([1.5, 2.1, 16.4, 9.7, 11.3], value => Math.floor(value)));
+
 // Example 7 - Метод forEach
 // Выполните рефакторинг кода используя метод forEach и стрелочные функции.
 
 // function logItems(items) {
 //   console.log(items);
-//   for (let i = 0; i < items.length; i += 1) {
-//     console.log(`${i + 1} - ${items[i]}`);
-//   }
+//   //   for (let i = 0; i < items.length; i += 1) {
+//   //     console.log(`${i + 1} - ${items[i]}`);
+//   //   }
+
+//   items.forEach((item, index) => {
+//     console.log(`${index + 1} - ${item}`);
+//   });
 // }
 
-// logItems(["Mango", "Poly", "Ajax"]);
-// logItems(["🍎", "🍇", "🍑", "🍌", "🍋"]);
+// logItems(['Mango', 'Poly', 'Ajax']);
+// logItems(['🍎', '🍇', '🍑', '🍌', '🍋']);
+
 // Example 8 - Метод forEach
 // Выполните рефакторинг кода используя метод forEach и стрелочные функции.
 
@@ -302,10 +369,19 @@
 //   }
 // }
 
+// function printContactsInfo({ names, phones }) {
+//   const nameList = names.split(',');
+//   const phoneList = phones.split(',');
+//   nameList.forEach((name, i) => {
+//     console.log(`${name}: ${phoneList[i]}`);
+//   });
+// }
+
 // printContactsInfo({
-//   names: "Jacob,William,Solomon,Artemis",
-//   phones: "89001234567,89001112233,890055566377,890055566300",
+//   names: 'Jacob,William,Solomon,Artemis',
+//   phones: '89001234567,89001112233,890055566377,890055566300',
 // });
+
 // Example 9 - Метод forEach
 // Выполните рефакторинг кода используя метод forEach и стрелочные функции.
 
@@ -316,6 +392,14 @@
 //   }
 //   return total / args.length;
 // }
+
+// const calсulateAverage = (...args) => {
+//   let total = 0;
+//   args.forEach(i => {
+//     total += i;
+//   });
+//   return total / args.length;
+// };
 
 // console.log(calсulateAverage(1, 2, 3, 4)); // 2.5
 // console.log(calсulateAverage(14, 8, 2)); // 8
