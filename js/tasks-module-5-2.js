@@ -649,12 +649,57 @@ const books = [
 // console.table(titles(books));
 
 // Створити масив цін всіх книжок з подвоєною вартістю.
+
+// const total = arr => {
+//   return arr.map(item => item.price * 2);
+// };
+// console.log(total(books));
+
 // Створити масив років видання всіх книжок з доданими 5 роками до кожного.
+
+// const years = arr => {
+//   return arr.map(item => item.year + 5);
+// };
+// console.log(years(books));
+
 // Створити масив об'єктів, які містять назву книжки та її рейтинг у відсотках (помножений на 10).
+
+// const listBooks = array => {
+//   return array.map(item => {
+//     return { title: item.title, rating: item.rating * 10 };
+//   });
+// };
+// console.table(listBooks(books));
+
 // Створити масив об'єктів, де назва книжки буде в верхньому регістрі.
+
+// const titles = array => {
+//   return array.map(item => item.title.toUpperCase());
+// };
+// console.table(titles(books));
+
 // Створити масив рядків, що містять інформацію про кожну книжку в форматі "назва - автор".
+
+// const strings = array => {
+//   return array.map(item => `${item.title} - ${item.author}`);
+// };
+// console.log(strings(books));
+
 // Створити масив об'єктів, де кожна книжка буде мати нове поле discountPrice, що дорівнює ціні зі знижкою 10%.
+
+// const addDiscount = array => {
+//   const copy = [...array];
+//   copy.forEach(function (item) {
+//     item.discountPrice = item.price - item.price * 0.1;
+//   });
+//   return copy;
+// };
+
+// console.table(addDiscount(books));
+
 // Створити масив об'єктів, що містять назву книжки та її ціну з доданим податком 15%.
+
+
 // Створити масив назв книжок, які видані після 2000 року.
 // Створити масив об'єктів, де кожна книжка буде мати нове поле isClassic, що дорівнює true, якщо книжка видана до 1950 року.
 // Отримати масив жанрів всіх книжок у верхньому регістрі.
