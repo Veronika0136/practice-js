@@ -699,18 +699,103 @@ const books = [
 
 // Створити масив об'єктів, що містять назву книжки та її ціну з доданим податком 15%.
 
+// const listBooks = array => {
+//   return array.map(item => {
+//     return { title: item.title, newPrice: item.price + item.price * 0.15 };
+//   });
+// };
+
+// console.table(listBooks(books));
 
 // Створити масив назв книжок, які видані після 2000 року.
+
+// const listBooks = (arr, year) => {
+//   return arr.filter(item => item.year > year).map(item => item.title);
+// };
+// console.log(listBooks(books, 1900));
+
 // Створити масив об'єктів, де кожна книжка буде мати нове поле isClassic, що дорівнює true, якщо книжка видана до 1950 року.
+
+// const addType = (array, year) => {
+//   const copy = [...array];
+//   copy.forEach(function (item) {
+//     item.isClassic = item.year < year ? true : false;
+//   });
+//   return copy;
+// };
+
+// console.table(addType(books, 1950));
+
 // Отримати масив жанрів всіх книжок у верхньому регістрі.
+
+// const listGenres = array => {
+//   return array.map(item => item.genre.toUpperCase());
+// };
+// console.log(listGenres(books));
+
 // Створити масив назв книжок, де всі слова в назві починаються з великої літери.
 // Створити масив об'єктів, що містять лише автора та рік видання кожної книжки.
+
+// const listBooks = array => {
+//   return array.map(item => {
+//     return { author: item.author, year: item.year };
+//   });
+// };
+
+// console.table(listBooks(books));
+
 // Створити масив цін книжок, конвертованих з доларів у євро (курс 1 долар = 0.85 євро).
+
+// const listPrices = array => {
+//   return array.map(item => Number((item.price / 1.18).toFixed(2)));
+// };
+
+// console.log(listPrices(books));
+
 // Створити масив назв книжок з доданим в кінці рядком "(Special Edition)".
+
+// const listTitles = arr => {
+//   return arr.map(item => item.title + ' (Special Edition)');
+// };
+// console.log(listTitles(books));
+
 // Створити масив об'єктів, де кожна книжка буде мати нове поле shortTitle, що містить тільки перше слово з назви.
+
+// const addType = array => {
+//   const copy = [...array];
+//   copy.forEach(function (item) {
+//     item.shortTitle = item.title.split(' ')[0];
+//   });
+//   return copy;
+// };
+// console.table(addType(books));
+
 // Створити масив об'єктів, де кожна книжка буде мати нове поле description, що містить рядок "Ця книга від автора [author] була видана у [year] році".
+
+// const addDescr = array => {
+//   const copy = [...array];
+//   copy.forEach(function (item) {
+//     item.description = `Ця книга від автора ${item.author} була видана у ${item.year} році`;
+//   });
+//   return copy;
+// };
+// console.log(addDescr(books));
+
 // Створити масив об'єктів, що містять лише назву та жанр кожної книжки, де жанр записаний у нижньому регістрі.
+
+// const listBooks = array => {
+//   return array.map(item => {
+//     return { title: item.title, genre: item.genre.toLowerCase() };
+//   });
+// };
+
+// console.table(listBooks(books));
+
 // Відсортувати книги за роком видання від найдавнішого до найновішого.
+
+const sortBooks = (arr) => {
+  return arr.toSorted(a,b) 
+} 
 // Відсортувати книги за ціною від найнижчої до найвищої.
 // Відсортувати книги за рейтингом від найнижчого до найвищого.
 // Відсортувати книги за назвою у алфавітному порядку (від А до Я).
