@@ -255,6 +255,11 @@ const books = [
 
 // console.table(searhGenre(books, 'Romance'));
 
+// const searhGenre = (arr, genre) => {
+//   return arr.filter(item => item.genre === genre);
+// };
+// console.table(searhGenre(books, 'Fantasy'));
+
 // Знайти всі книги, видані після 2000 року.
 
 // function searhGenre(arr, year) {
@@ -268,6 +273,11 @@ const books = [
 // }
 
 // console.table(searhGenre(books, 1900));
+
+// const searhYear = (arr, year) => {
+//   return arr.filter(item => item.year > year);
+// };
+// console.table(searhYear(books, 1900));
 
 // Знайти всі книги, автором яких є 'Fyodor Dostoevsky'.
 
@@ -283,6 +293,11 @@ const books = [
 
 // console.table(searhGenre(books, 'Fyodor Dostoevsky'));
 
+// const searhAuthor = (arr, author) => {
+//   return arr.filter(item => item.author === author);
+// };
+// console.table(searhAuthor(books, 'Fyodor Dostoevsky'));
+
 // Знайти всі книги з ціною меншою ніж 10 доларів.
 
 // function searhGenre(arr, price) {
@@ -297,6 +312,11 @@ const books = [
 
 // console.table(searhGenre(books, 10));
 
+// const searhPrice = (arr, price) => {
+//   return arr.filter(item => item.price < price);
+// };
+// console.table(searhPrice(books, 10));
+
 // Знайти всі книги з рейтингом 4.8 і вище.
 
 // function searhGenre(arr, rating) {
@@ -310,6 +330,11 @@ const books = [
 // }
 
 // console.table(searhGenre(books, 4.8));
+
+// const searhRating = (arr, rating) => {
+//   return arr.filter(item => item.rating > rating);
+// };
+// console.table(searhRating(books, 4.8));
 
 // Знайти всі книги жанру 'Romance' та з ціною меншою ніж 8 доларів.
 
@@ -331,6 +356,11 @@ const books = [
 
 // console.table(searhGenre(books, 'Romance', 8));
 
+// const searhBooks = (arr, genre, price) => {
+//   return arr.filter(item => item.genre === genre).filter(item => item.price < price);
+// };
+// console.table(searhBooks(books, 'Romance', 8));
+
 // Знайти всі книги, видані до 1900 року.
 
 // function searhGenre(arr, year) {
@@ -344,6 +374,11 @@ const books = [
 // }
 
 // console.table(searhGenre(books, 1900));
+
+// const searhBooks = (arr, year) => {
+//   return arr.filter(item => item.year < year);
+// };
+// console.table(searhBooks(books, 1900));
 
 // Знайти всі книги, що містять слово 'and' у назві.
 
@@ -359,6 +394,11 @@ const books = [
 
 // console.table(searhGenre(books, 'and'));
 
+// const searhWord = (arr, word) => {
+//   return arr.filter(item => item.title.includes(word));
+// };
+// console.table(searhWord(books, 'and'));
+
 // Знайти всі книги, автором яких є 'J.R.R. Tolkien'.
 
 // function searhGenre(arr, author) {
@@ -372,6 +412,11 @@ const books = [
 // }
 
 // console.table(searhGenre(books, 'J.R.R. Tolkien'));
+
+// const searhBooksAuthor = (arr, author) => {
+//   return arr.filter(item => item.author === author);
+// };
+// console.table(searhBooksAuthor(books, 'J.R.R. Tolkien'));
 
 // Знайти всі книги жанру 'Historical' з рейтингом вище 4.7.
 
@@ -392,6 +437,11 @@ const books = [
 // }
 
 // console.table(searhGenre(books, 'Historical', 4.7));
+
+// const searhBooks = (arr, genre, rating) => {
+//   return arr.filter(item => item.genre === genre).filter(item => item.rating > rating);
+// };
+// console.table(searhBooks(books, 'Historical', 4.7));
 
 // Знайти першу книгу жанру 'Fantasy'.
 
@@ -431,16 +481,78 @@ const books = [
 // console.log(firstBook(books, 4.8));
 
 // Знайти першу книгу жанру 'Romance' з ціною меншою ніж 8 доларів.
+
+// const firstBook = (arr, genre, price) => {
+//   return arr.filter(item => item.genre === genre).find(item => item.price < price);
+// };
+// console.table(firstBook(books, 'Romance', 8));
+
 // Знайти першу книгу, видану до 1900 року.
+
+// const firstBookYear = (arr, year) => {
+//   return arr.find(item => item.year < year);
+// };
+// console.table(firstBookYear(books, 1900));
+
 // Знайти першу книгу, що містить слово 'and' у назві.
+
+// const firstBookWord = (arr, word) => {
+//   return arr.find(item => item.title.includes(word));
+// };
+// console.table(firstBookWord(books, 'and'));
+
 // Знайти першу книгу, автором якої є 'J.R.R. Tolkien'.
+
+// const firstBookAuthor = (arr, author) => {
+//   return arr.find(item => item.author === author);
+// };
+// console.table(firstBookAuthor(books, 'J.R.R. Tolkien'));
+
 // Знайти першу книгу жанру 'Historical' з рейтингом вище 4.7.
+
+// const searchBook = (arr, genre, rating) => {
+//   return arr.filter(item => item.rating > rating).find(item => item.genre === genre);
+// };
+// console.table(searchBook(books, 'Historical', 4.7));
+
 // Чи є в масиві хоча б одна книга жанру 'Fantasy'?
+
+// const isGenge = (arr, genre) => {
+//   return arr.some(item => item.genre === genre);
+// };
+// console.table(isGenge(books, 'Fantasy'));
+
 // Чи є в масиві хоча б одна книга, видана після 2000 року?
+
+// const isYear = (arr, year) => {
+//   return arr.some(item => item.year > year);
+// };
+// console.log(isYear(books, 1960));
+
 // Чи є в масиві хоча б одна книга, автором якої є 'Fyodor Dostoevsky'?
+
+// const isAuthor = (arr, author) => {
+//   return arr.some(item => item.author === author);
+// };
+// console.log(isAuthor(books, 'Fyodor Dostoevsky'));
+
 // Чи є в масиві хоча б одна книга з ціною меншою ніж 10 доларів?
+
+// const isPrice = (arr, price) => {
+//   return arr.some(item => item.price < price);
+// };
+// console.log(isPrice(books, 10));
+
 // Чи є в масиві хоча б одна книга з рейтингом 4.8 і вище?
+
+// const isRating = (arr, rating) => {
+//   return arr.some(item => item.rating >= rating);
+// };
+// console.log(isRating(books, 4.8));
+
 // Чи є в масиві хоча б одна книга жанру 'Romance' з ціною меншою ніж 8 доларів?
+
+const 
 // Чи є в масиві хоча б одна книга, видана до 1900 року?
 // Чи є в масиві хоча б одна книга, що містить слово 'and' у назві?
 // Чи є в масиві хоча б одна книга, автором якої є 'J.R.R. Tolkien'?
