@@ -552,24 +552,102 @@ const books = [
 
 // Чи є в масиві хоча б одна книга жанру 'Romance' з ціною меншою ніж 8 доларів?
 
-const 
+// const isBook = (arr, genre, price) => {
+//   return arr.filter(item => item.genre === genre).some(item => item.price < price);
+// };
+// console.log(isBook(books, 'Romance', 8));
+
 // Чи є в масиві хоча б одна книга, видана до 1900 року?
+
+// const isBook = (arr, year) => {
+//   return arr.some(item => item.year < year);
+// };
+// console.log(isBook(books, 1900));
+
 // Чи є в масиві хоча б одна книга, що містить слово 'and' у назві?
+
+// const isBook = (arr, word) => {
+//   return arr.some(item => item.title.includes(word));
+// };
+// console.log(isBook(books, 'and'));
+
 // Чи є в масиві хоча б одна книга, автором якої є 'J.R.R. Tolkien'?
+
+// const isBook = (array, author) => {
+//   return array.some(item => item.author === author);
+// };
+// console.log(isBook(books, 'J.R.R. Tolkien'));
+
 // Чи є в масиві хоча б одна книга жанру 'Historical' з рейтингом вище 4.7?
+
+// const isBook =( array, genre, rating) =>{
+//   return array.filter(item => item.genre === genre).some(item => item.rating > rating);
+// }
+// console.log(isBook(books, 'Historical', 4.7));
+
 // Чи всі книги в масиві мають рейтинг 4.5 і вище?
+
+// const isBooksRating = (array, rating) => {
+//   return array.every(item => item.rating >= rating);
+// };
+// console.log(isBooksRating(books, 4.5));
+
 // Чи всі книги в масиві коштують менше 20 доларів?
+
+// const isBooks = (array, price) => {
+//     return array.every(item => item.price < price);
+//   };
+//   console.log(isBooks(books,20));
+
 // Чи всі книги в масиві видані після 1950 року?
+
+// const isBooks = (array, year) => {
+//   return array.every(item => item.year > year);
+// };
+// console.log(isBooks(books,1950));
+
 // Чи всі книги в масиві є жанру 'Fiction'?
+
+// const isBooks = (array, genre) => {
+//   return array.every(item => item.genre === genre);
+// };
+// console.log(isBooks(books, 'Fiction'));
+
 // Чи всі книги в масиві мають автора з ім'ям, що починається на 'J'?
+
+// const isBooks = array => {
+//   return array.every(item => item.author.startsWith('J'));
+// };
+// console.log(isBooks(books));
+
 // Чи всі книги в масиві є жанру 'Romance' з ціною меншою ніж 15 доларів?
 // Чи всі книги в масиві видані до 2000 року?
 // Чи всі книги в масиві мають слово 'the' у назві?
 // Чи всі книги в масиві мають рейтинг вище 4.0?
 // Чи всі книги в масиві є жанру 'Adventure'?
 // Отримати масив назв всіх книжок.
+
+// const names = array => {
+//   return array.map(book => book.title);
+// };
+// console.log(names(books));
+
 // Отримати масив авторів всіх книжок.
+
+// const allAuthors = array => {
+//   return array.map(item => item.author);
+// };
+// console.log(allAuthors(books));
+
 // Створити масив об'єктів, які містять лише назву та автора кожної книжки.
+
+// const titles = array => {
+//   return array.map(item => {
+//     return { title: item.title, author: item.author };
+//   });
+// };
+// console.table(titles(books));
+
 // Створити масив цін всіх книжок з подвоєною вартістю.
 // Створити масив років видання всіх книжок з доданими 5 роками до кожного.
 // Створити масив об'єктів, які містять назву книжки та її рейтинг у відсотках (помножений на 10).
