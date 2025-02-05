@@ -793,20 +793,118 @@ const books = [
 
 // Відсортувати книги за роком видання від найдавнішого до найновішого.
 
-const sortBooks = (arr) => {
-  return arr.toSorted(a,b) 
-} 
+// const resurl = books.toSorted((a, b) => {
+//   return a.year - b.year;
+// });
+
+// console.table(resurl);
+
 // Відсортувати книги за ціною від найнижчої до найвищої.
+
+// const resurl = books.toSorted((a, b) => {
+//   return a.price - b.price;
+// });
+
+// console.table(resurl);
+
 // Відсортувати книги за рейтингом від найнижчого до найвищого.
+
+// const resurl = books.toSorted((a, b) => {
+//   return a.rating - b.rating;
+// });
+
+// console.table(resurl);
+
 // Відсортувати книги за назвою у алфавітному порядку (від А до Я).
+
+// const resurl = books.toSorted((a, b) => {
+//   return a.title.localeCompare(b.title);
+// });
+
+// console.table(resurl);
+
 // Відсортувати книги за автором у зворотньому алфавітному порядку (від Z до A).
+
+// const result = books.toSorted((a, b) => {
+//   return b.author.localeCompare(a.author);
+// });
+
+// console.table(result);
+
 // Відсортувати книги за жанром у алфавітному порядку, але книги одного жанру за назвою у зворотньому алфавітному порядку.
+
+// const resurl = books
+
+//   .toSorted((a, b) => {
+//     return b.title.localeCompare(a.title);
+//   })
+//   .toSorted((a, b) => {
+//     return a.genre.localeCompare(b.genre);
+//   });
+
+// console.table(resurl);
+
 // Відсортувати книги за назвою у алфавітному порядку, але книги з однаковою назвою за автором у зворотньому алфавітному порядку.
+
+// const result = books.toSorted((a, b) => {
+//   if (a.title === b.title) {
+//     return b.author.localeCompare(a.author);
+//   } else {
+//     return a.title.localeCompare(b.title);
+//   }
+// });
+
+// console.table(result);
+
 // Відсортувати книги за ціною, але спочатку розташувати ті, які коштують менше 10 доларів, потім решту.
-// Відсортувати книги за рейтингом, але спочатку розташувати ті, які мають рейтинг 4.8 і вище, потім решту.
+
+// const result = books.toSorted((a, b) => {
+//   if (a.price < 10 && b.price >= 10) {
+//     return -1;
+//   } else if (a.price >= 10 && b.price < 10) {
+//     return 1;
+//   } else {
+//     return a.price - b.price;
+//   }
+// });
+
+// console.table(result);
+
 // Відсортувати книги спочатку за жанром, а потім за роком видання.
+
+// const resurl = books
+
+//   .toSorted((a, b) => {
+//     return a.year - b.year;
+//   })
+//   .toSorted((a, b) => {
+//     return a.genre.localeCompare(b.genre);
+//   });
+
+// console.table(resurl);
+
 // Отримати всі книги, видані після 2000 року та відсортувати їх за рейтингом від найвищого до найнижчого, повернути лише назви.
+
+// const listBooks = (arr, year) => {
+//   return arr
+//     .filter(item => item.year >= year)
+//     .toSorted((a, b) => b.rating - a.rating)
+//     .map(item => item.title);
+// };
+
+// console.log(listBooks(books, 1900));
+
 // Отримати всі книги, автором яких є 'Fyodor Dostoevsky', відсортувати їх за роком видання від найдавнішого до найновішого та вивести перші 5 книг.
+
+// const listBooks = (arr, author) => {
+//   return arr
+//     .filter(item => item.author === author)
+//     .toSorted((a, b) => a.year - b.yaer)
+//     .slice(0, 5);
+// };
+
+// console.table(listBooks(books, 'J.R.R. Tolkien'));
+
 // Отримати всі книги з ціною меншою ніж 10 доларів, відсортувати їх за ціною від найнижчої до найвищої та вивести назви книг.
 // Отримати всі книги з рейтингом 4.8 і вище, відсортувати їх за автором у зворотньому алфавітному порядку та вивести авторів унікальних книг.
 // Отримати всі книги жанру 'Romance' з ціною меншою ніж 8 доларів та відсортувати їх за рейтингом від найвищого до найнижчого.
