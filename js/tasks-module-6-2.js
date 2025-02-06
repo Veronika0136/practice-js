@@ -2,13 +2,81 @@
 // Основні математичні операції: add, subtract, multiply, і divide. Кожен
 // метод прийматиме два числа і повертатиме результат відповідної операції.
 
+// class Calculator {
+//     add(a, b) {
+//       return a + b;
+//     }
+  
+//     subtract(a, b) {
+//       return a - b;
+//     }
+  
+//     multiply(a, b) {
+//       return a * b;
+//     }
+  
+//     divide(a, b) {
+//       if (b === 0) {
+//         return 'Error: division by zero';
+//       } else {
+//         return a / b;
+//       }
+//     }
+//   }
+
 // Клас ContactBook: Створіть клас Contact для подання контакту з полями name,
 // email та phone. Потім реалізуйте клас ContactBook, який зберігатиме список
 // контактів та надавати методи для додавання, видалення та пошуку контактів.
 
+// class Contact {
+//     constructor(name, email, phone) {
+//       this.name = name;
+//       this.email = email;
+//       this.phone = phone;
+//     }
+//   }
+  
+//   class ContactBook {
+//     constructor() {
+//       this.contacts = [];
+//     }
+  
+//     addContact(contact) {
+//       this.contacts.push(contact);
+//     }
+  
+//     deleteContact(email) {
+//       this.contacts = this.contacts.filter(contact => contact.email !== email);
+//     }
+  
+//     searchContact(name) {
+//       return this.contacts.find(contact => contact.name === name);
+//     }
+//   }
+
 // Клас Rectangle: Напишіть клас Rectangle, який представлятиме прямокутник з
 // методами для обчислення його площі та периметра. Конструктор клас повинен
 // приймати довжини двох сторін.
+
+// class Rectangle {
+//     constructor(side1, side2) {
+//         this.side1 = side1;
+//         this.side2 = side2;
+//     }
+
+//     getArea() {
+//         return this.side1 * this.side2;
+//     }
+
+//     getPerimeter() {
+//         return 2 * (this.side1 + this.side2);
+//     }
+// }
+
+// let myRectangle = new Rectangle(5, 10);
+// console.log("Area:", myRectangle.getArea());
+// console.log("Perimeter:", myRectangle.getPerimeter());
+
 
 // Клас ToDoList: Створіть клас Task для представлення задач з полями title,
 // description та completed. Потім реалізуйте клас ToDoList, який зберігатиме
