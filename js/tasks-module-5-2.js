@@ -906,11 +906,53 @@ const books = [
 // console.table(listBooks(books, 'J.R.R. Tolkien'));
 
 // Отримати всі книги з ціною меншою ніж 10 доларів, відсортувати їх за ціною від найнижчої до найвищої та вивести назви книг.
+
+// const result = (arr, price) => {
+//   return arr
+//     .filter(item => item.price < price)
+//     .toSorted((a, b) => a.price - b.price)
+//     .map(item => item.title);
+// };
+// console.table(result(books, 10));
+
 // Отримати всі книги з рейтингом 4.8 і вище, відсортувати їх за автором у зворотньому алфавітному порядку та вивести авторів унікальних книг.
+
 // Отримати всі книги жанру 'Romance' з ціною меншою ніж 8 доларів та відсортувати їх за рейтингом від найвищого до найнижчого.
+
+// const result = arr => {
+//   return arr
+//     .filter(item => item.genre === 'Romance')
+//     .filter(item => item.price < 10)
+//     .toSorted((a, b) => b.rating - a.rating);
+// };
+
+// console.table(result(books));
+
 // Отримати всі книги, видані до 1900 року, відсортувати їх за рейтингом від найвищого до найнижчого та вивести першу книгу.
+
+// const result = arr => {
+//   return arr
+//     .filter(item => item.year < 1900)
+//     .toSorted((a, b) => b.rating - a.rating)
+//     .find(item => item);
+// };
+
+// console.log(result(books));
+
 // Отримати всі книги, що містять слово 'and' у назві, відсортувати їх за роком видання від найдавнішого до найновішого та вивести останню книгу.
+
+// const result = arr => {
+//   return arr
+//     .filter(item => item.title.includes('and'))
+//     .toSorted((a, b) => a.year - b.yaer)
+//     .find(item => item === arr[arr.length - 1]);
+// };
+
+// console.log(result(books));
+
 // Отримати всі книги, автором яких є 'J.R.R. Tolkien', відсортувати їх за рейтингом від найвищого до найнижчого та вивести середній рейтинг.
+
+
 // Отримати всі книги жанру 'Historical' з рейтингом вище 4.7, відсортувати їх за роком видання від найдавнішого до найновішого та вивести останні 3 книги.
 
 const cars = [
